@@ -17,29 +17,23 @@ class Main
         System.out.print("");
         System.out.println();
 
+        Scanner user_input = new Scanner(System.in, "Cp1251");
+
         // new line - symbol, \n
 
-        System.out.print("Please, enter your name: " + "Anton");
-        System.out.println();
-        System.out.println("Please, enter your surname: ");
-        System.out.println("Please, enter your age: ");
-
-        System.out.println("Let's calculate sum of 5 + 10: " + (5 + 10));
-        System.out.println("Anton" + " " + "Vasilenkov" +
-                ". Welcome to my First " +
-                "Lesson to...........");
-
         // This is an example comment for Git
-        System.out.println();
-        System.out.print("Please, enter your name & surname: ");
-        Scanner scanner = new Scanner(System.in);
-        scanner.nextLine();
+        String first_name;
+        System.out.print("введите имя: ");
+        first_name = user_input.next();
 
-        // New Comment
+        String family_name;
+        System.out.print("введите фамилию: ");
+        family_name = user_input.next();
 
-        String name = "123";
-        int age = 22;
-        double weight = 88.1;
-        char symbol = 'A';
+        String full;
+        full = first_name + " " + family_name;
+
+        System.out.println("вас зовут " + full);
+
     }
 }
