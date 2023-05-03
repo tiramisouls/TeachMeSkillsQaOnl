@@ -24,11 +24,11 @@ class Main
         // This is an example comment for Git
         String first_name;
         System.out.print("введите имя: ");
-        first_name = user_input.next();
+        first_name = user_input.nextLine();
 
         String family_name;
         System.out.print("введите фамилию: ");
-        family_name = user_input.next();
+        family_name = user_input.nextLine();
 
         String full;
         full = first_name + " " + family_name;
