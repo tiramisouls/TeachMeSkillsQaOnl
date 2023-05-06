@@ -20,32 +20,26 @@ public class Main
     //task1
         public static void ScannerMyRecords()
         {
-
-            System.out.print(" Please, enter your name: ");
+            System.out.print(" Enter your name: ");
             String name = scanner.nextLine();
+            System.out.print(" Enter your surname: ");
+            String surname = scanner.nextLine();
+            System.out.print(" Enter your age: ");
+            String age = scanner.nextLine();
+            System.out.print(" Enter your height: ");
+            String height = scanner.nextLine();
+            System.out.print(" Enter your weight: ");
+            String weight = scanner.nextLine();
 
-
-        System.out.print(" Please, enter your surname : ");
-        String surname = scanner.nextLine();
-
-        System.out.print(" Please, enter your age: ");
-        String age = scanner.nextLine();
-
-        System.out.print(" Please, enter your height: ");
-        String height = scanner.nextLine();
-
-        System.out.print(" Please, enter your weight: ");
-        String weight = scanner.nextLine();
-
-            System.out.println("Name: " + name);
-            System.out.println("Surname: " + surname);
-            System.out.println("Age: " + age);
-            System.out.println("Height: " + height);
-            System.out.println("Weight: " + weight);
+            System.out.println(" Name: " + name);
+            System.out.println(" Surname: " + surname);
+            System.out.println(" Age: " + age);
+            System.out.println(" Height: " + height);
+            System.out.println(" Weight: " + weight);
 
         }
 
-     //task3
+     //task2
     public static void CharToInt(){
 
         char mySymbol ='A';
