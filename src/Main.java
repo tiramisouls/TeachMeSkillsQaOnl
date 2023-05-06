@@ -1,39 +1,69 @@
-/*
-Добро пожаловать. Это многолинейный комментарий. Пишем что хотим и сколько хотим.
- */
-
 import java.util.Scanner;
-
-// Главная реализация моего объекта это Класс
-class Main
+public class Main
 {
-    public static void main(String[] args)
-    {
-        // Этот код выводит сообщение, one-line comment
-        // Legacy Code - код написанный другим программистом и скорее всего
-        // на старой версии языка
-        // Java - это чаще всего 1.8 (Java 8)
+    public static final Scanner scanner = new Scanner(System.in);
 
-        System.out.print("");
+    public static void main(String[] args) {
+
+        ScannerMyRecords();
         System.out.println();
 
-        Scanner user_input = new Scanner(System.in, "Cp1251");
+        CharToInt();
+        System.out.println();
 
-        // new line - symbol, \n
+        calculateBMI();
+        System.out.println();
 
-        // This is an example comment for Git
-        String first_name;
-        System.out.print("введите имя: ");
-        first_name = user_input.nextLine();
-
-        String family_name;
-        System.out.print("введите фамилию: ");
-        family_name = user_input.nextLine();
-
-        String full;
-        full = first_name + " " + family_name;
-
-        System.out.println("вас зовут " + full);
-
+        scanner.close();
     }
+
+    //task1
+        public static void ScannerMyRecords()
+        {
+
+            System.out.print(" Please, enter your name: ");
+            String name = scanner.nextLine();
+
+
+        System.out.print(" Please, enter your surname : ");
+        String surname = scanner.nextLine();
+
+        System.out.print(" Please, enter your age: ");
+        String age = scanner.nextLine();
+
+        System.out.print(" Please, enter your height: ");
+        String height = scanner.nextLine();
+
+        System.out.print(" Please, enter your weight: ");
+        String weight = scanner.nextLine();
+
+            System.out.println("Name: " + name);
+            System.out.println("Surname: " + surname);
+            System.out.println("Age: " + age);
+            System.out.println("Height: " + height);
+            System.out.println("Weight: " + weight);
+
+        }
+
+     //task3
+    public static void CharToInt(){
+
+        char mySymbol ='A';
+        System.out.println("A -" + (int)mySymbol);
+        char mySymbol1 ='C';
+        System.out.println("C -" + (int)mySymbol1);
+
+        }
+
+     //task3
+    public static void calculateBMI(){
+
+        System.out.print(" Enter weight in kilograms: ");
+        double weight = scanner.nextDouble();
+        System.out.print(" Enter height in meters: ");
+        double height = scanner.nextDouble();
+        double BMI = weight/(height*height);
+        System.out.println(" BMI result: " + BMI + " kg/m2 ");
+   }
+
 }
