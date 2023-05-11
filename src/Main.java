@@ -156,7 +156,7 @@ public class Main {
             a = sc.nextInt();
             System.out.println(i + a);
         } else {
-            System.out.println("Вы ввели не целое число");
+            System.out.print("Вы ввели не целое число");
         }
 
 
@@ -182,7 +182,43 @@ public class Main {
 
     }
     public static void numberSquares(){
-        int i = 10;
+        System.out.println(" " +
+                "");
+        int a1 = 10;
+        int b1 = 2;
+        System.out.println("Число 10 в квадрате равно " + Math.pow(a1, b1));
+        int a2 = 11;
+        int b2 = 2;
+        System.out.println("Число 11 в квадрате равно " + Math.pow(a2, b2));
+        int a3 = 12;
+        int b3 = 2;
+        System.out.println("Число 12 в квадрате равно " + Math.pow(a3, b3));
+        int a4 = 13;
+        int b4 = 2;
+        System.out.println("Число 13 в квадрате равно " + Math.pow(a4, b4));
+        int a5 = 14;
+        int b5 = 2;
+        System.out.println("Число 14 в квадрате равно " + Math.pow(a5, b5));
+        int a6 = 15;
+        int b6 = 2;
+        System.out.println("Число 15 в квадрате равно " + Math.pow(a6, b6));
+        int a7 = 16;
+        int b7 = 2;
+        System.out.println("Число 16 в квадрате равно " + Math.pow(a7, b7));
+        int a8 = 17;
+        int b8 = 2;
+        System.out.println("Число 17 в квадрате равно " + Math.pow(a8, b8));
+        int a9 = 18;
+        int b9 = 2;
+        System.out.println("Число 18 в квадрате равно " + Math.pow(a9, b9));
+        int a10 = 19;
+        int b10 = 2;
+        System.out.println("Число 19 в квадрате равно " + Math.pow(a10, b10));
+        int a11 = 20;
+        int b11 = 2;
+        System.out.println("Число 20 в квадрате равно " + Math.pow(a11, b11));
+
+
 
 
 
