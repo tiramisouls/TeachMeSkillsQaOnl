@@ -1,63 +1,138 @@
 import java.util.Scanner;
-public class Main
-{
+public class Main {
     public static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        scannerMyRecords();
-        System.out.println();
-
-        charToInt();
-        System.out.println();
-
-        calculateBMI();
-        System.out.println();
-
+        switchOperator();
+        elseIfOperator();
+        evenNumber();
+        outTemperature();
+        rainbowColors();
         scanner.close();
+
     }
 
     //task1
-        public static void scannerMyRecords()
+    public static void switchOperator() {
+        int month = 5;
+        switch (month) {
+
+            case 1:
+                System.out.println(" Winter! ");
+                break;
+            case 2:
+                System.out.println(" Winter! ");
+                break;
+            case 3:
+                System.out.println(" Spring! ");
+                break;
+            case 4:
+                System.out.println(" Spring! ");
+                break;
+            case 5:
+                System.out.println(" Spring! ");
+                break;
+            case 6:
+                System.out.println(" Summer! ");
+                break;
+            case 7:
+                System.out.println(" Summer! ");
+                break;
+            case 8:
+                System.out.println(" Summer! ");
+                break;
+            case 9:
+                System.out.println(" Autumn! ");
+                break;
+            case 10:
+                System.out.println(" Autumn! ");
+                break;
+            case 11:
+                System.out.println(" Autumn! ");
+                break;
+            case 12:
+                System.out.println(" Winter! ");
+                break;
+
+        }
+    }
+
+        //task2
+        public static void elseIfOperator()
         {
-            System.out.print(" Enter your name: ");
-            String name = scanner.nextLine();
-            System.out.print(" Enter your surname: ");
-            String surname = scanner.nextLine();
-            System.out.print(" Enter your age: ");
-            int age = scanner.nextInt();
-            System.out.print(" Enter your height: ");
-            int height = scanner.nextInt();
-            System.out.print(" Enter your weight: ");
-            double weight = scanner.nextDouble();
+            int month = 6;
 
-            System.out.println(" Name: " + name);
-            System.out.println(" Surname: " + surname);
-            System.out.println(" Age: " + age);
-            System.out.println(" Height: " + height);
-            System.out.println(" Weight: " + weight);
+            if (month == 12 || month == 1 || month == 2) {
+                System.out.println(" Winter! ");
+            }
+            else if (month == 3 || month == 4 || month == 5) {
+                System.out.println(" Spring! ");
+            }
+            else if (month == 6 || month == 7 || month == 8) {
+                System.out.println(" Summer! ");
+            }
+            else {
+                System.out.println(" Autumn! ");
+            }
+        }
+        public static void evenNumber()
+        {
+        System.out.print(" Enter number: ");
+        int num = scanner.nextInt();
+        if ( num % 2 == 0) {
+
+            System.out.println(" Even Number");
+        }
+        else {
+
+            System.out.println(" Not Even Number ");
+        }
+
 
         }
 
-     //task2
-    public static void charToInt(){
+        public static void outTemperature(){
+        int t = 15;
+        if (t>14){
+            System.out.println(" Warm ");
+        }
+        else if (t>=10){
+            System.out.println(" Normally ");
+        }
+        else if (t<=5){
+            System.out.println(" Cold ");
+        }
+        }
 
-        char mySymbol ='A';
-        System.out.println("A -" + (int)mySymbol);
-        char mySymbol1 ='C';
-        System.out.println("C -" + (int)mySymbol1);
+        public static void rainbowColors(){
+        int color = 3;
+        if (color==1){
+            System.out.println(" Red ");
+        }
+        else if (color==2) {
+            System.out.println(" Orange ");
+        }
+        else if (color==3){
+            System.out.println(" Yellow ");
+
+            }
+        else if (color==4){
+            System.out.println(" Green ");
+        }
+        else if (color==5){
+            System.out.println(" Light blue ");
+        }
+        else if (color==6){
+            System.out.println(" Blue ");
+        }
+        else if (color==7){
+            System.out.println(" Violet ");
+        }
 
         }
 
-     //task3
-    public static void calculateBMI(){
-
-        System.out.print(" Enter weight in kilograms: ");
-        double weight = scanner.nextDouble();
-        System.out.print(" Enter height in centimeters: ");
-        double height = scanner.nextDouble();
-        double BMI = weight/(height*height)*(100*100);
-        System.out.println(" BMI result: " + BMI + " kg/m2 ");
-   }
 
 }
+
+
