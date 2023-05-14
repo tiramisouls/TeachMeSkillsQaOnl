@@ -92,7 +92,7 @@ public class Main {
 
     }
 
-    // task 3
+    // task 3 сравнение средних арефметических чисел из заданных массивов
     public static void createMassAvgNumbersOfArrays() {
         int sum1 = 0;
         int sum2 = 0;
